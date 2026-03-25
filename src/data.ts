@@ -91,31 +91,7 @@ export const experiences = [
   },
 ];
 
-export const projects = [
-  {
-    title: 'Entre Peces',
-    desc: 'Digital marketplace platform for Entre Peces, featuring a scalable e-commerce model.',
-    tech: ['TypeScript', 'Marketplace', 'E-commerce'],
-    github: 'https://github.com/Dramirez18/Entre-peces',
-  },
-  {
-    title: 'Colombian Coffee',
-    desc: 'Web application showcasing Colombian coffee culture and products.',
-    tech: ['TypeScript', 'Web App'],
-    github: 'https://github.com/Dramirez18/ColombianCoffee',
-  },
-  {
-    title: 'Borboletas',
-    desc: 'Frontend application built with modern TypeScript tooling.',
-    tech: ['TypeScript', 'Frontend'],
-    github: 'https://github.com/Dramirez18/Borboletas',
-  },
-  {
-    title: 'App Trading',
-    desc: 'Trading application project for market analysis and operations.',
-    tech: ['Trading', 'Finance'],
-    github: 'https://github.com/Dramirez18/apptradin',
-  },
+export const extraProjects = [
   {
     title: 'Rechsteiner Ideas',
     desc: 'Collaborative web project developed in partnership with Juan Villota.',

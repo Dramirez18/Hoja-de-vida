@@ -1,12 +1,12 @@
 import { Github, Code2, Loader2 } from 'lucide-react';
 import { useGitHubRepos } from '../hooks/useGitHubRepos';
-import { projects as fallbackProjects } from '../data';
+import { extraProjects } from '../data';
 import SectionHeading from './SectionHeading';
 
 export default function ProjectsSection() {
   const { projects: githubProjects, loading, error } = useGitHubRepos();
 
-  const projects = error ? fallbackProjects : githubProjects;
+  const projects = error ? extraProjects : [...githubProjects, ...extraProjects];
 
   return (
     <section id="projects" className="py-32">

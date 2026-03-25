@@ -17,6 +17,7 @@ export interface Project {
 }
 
 const GITHUB_USERNAME = 'Dramirez18';
+const HIDDEN_REPOS = ['apptradin'];
 
 export function useGitHubRepos() {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -31,7 +32,7 @@ export function useGitHubRepos() {
       })
       .then((repos: GitHubRepo[]) => {
         const mapped = repos
-          .filter((repo) => !repo.fork)
+          .filter((repo) => !repo.fork && !HIDDEN_REPOS.includes(repo.name))
           .map((repo) => ({
             title: repo.name.replace(/-/g, ' '),
             desc: repo.description || 'GitHub repository.',

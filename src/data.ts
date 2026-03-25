@@ -44,7 +44,7 @@ export const experiences = [
   {
     company: 'Suministros Industriales y Servicios SIS',
     role: 'Warehouse Manager',
-    date: 'Bogotá, Colombia',
+    date: 'Full-time',
     points: [
       'Implemented a product output registration model.',
       'Inventory planning and stock optimization.',
@@ -53,30 +53,30 @@ export const experiences = [
   },
   {
     company: 'SmartBeemo',
-    role: 'Representante superior de ventas',
-    date: 'Florida, Estados Unidos',
-    points: ['Atención directa de Leads para cierre en primer contacto.'],
+    role: 'Senior Sales Representative',
+    date: 'Full-time',
+    points: ['Direct lead management focused on first-contact closing.'],
   },
   {
     company: 'Universidad Militar',
-    role: 'Asistente de investigación',
-    date: 'Bogotá, Colombia',
+    role: 'Research Assistant',
+    date: 'Full-time',
     points: [
-      'Gestione todo el proyecto de caracterización de metales pesados en la cuenca del río Bogotá.',
+      'Managed the full heavy metals characterization project for the Bogotá River basin.',
     ],
   },
   {
     company: 'Repremundo SAS',
-    role: 'Analista de inventario',
-    date: 'Contrato temporal',
-    points: ['Aplicación de Excel.'],
+    role: 'Inventory Analyst',
+    date: 'Contract',
+    points: ['Applied advanced Excel techniques for inventory tracking and analysis.'],
   },
   {
     company: 'Agencia de Aduanas SIACO Nvl 1',
-    role: 'Asistente gestión ambiental',
-    date: 'Contrato de prácticas',
+    role: 'Environmental Management Assistant',
+    date: 'Internship',
     points: [
-      'Encargado de todo el SGA, participando en el PREAD, implementación de capacitaciones.',
+      'Managed the entire Environmental Management System (EMS), contributing to the PREAD program and implementing training sessions.',
     ],
   },
   {

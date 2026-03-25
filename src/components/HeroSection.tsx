@@ -21,7 +21,7 @@ export default function HeroSection() {
           Engineer and application developer for entrepreneurs and businesses.
           Design, quality, efficiency, and punctuality — these are the principles
           that define my approach to every project. I consistently deliver my best
-          work leveraging platforms such as Bubble.io, Openclaw, Claude, Google
+          work leveraging platforms such as Bubble.io, OpenClaw, Claude, Google
           Cloud Console, Meta, Supabase, and more.
         </p>
         <div className="flex gap-6 items-center">

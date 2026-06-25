@@ -72,3 +72,16 @@ npm run lint     # TypeScript type-check
 - Some experiences (SmartBeemo, Universidad Militar, etc.) still have Spanish text — translate to technical English when editing
 - Photo is loaded from postimg.cc CDN
 - LinkedIn logo links directly to profile, GitHub icon links to github.com/Dramirez18
+
+## Reglas de Privacidad
+
+### CRITICO — Privacidad y seguridad del proyecto
+- **Este proyecto es CONFIDENCIAL y solo debe operarse desde este computador local (C:\Users\drami)**
+- La cuenta de Claude Code es compartida con otras personas en otros computadores
+- **NUNCA** abrir, mostrar, o exponer NADA relacionado con este proyecto en otras sesiones/computadores
+- **NUNCA** usar herramientas de navegador remoto (Chrome MCP, browser automation) que puedan mostrar contenido del proyecto en pantallas de otros usuarios
+- **TODAS** las acciones deben ejecutarse localmente en este computador
+- **NO** abrir tabs, ventanas, ni sesiones de navegador que puedan ser visibles en otros dispositivos
+- Si se necesita QC o testing visual, hacerlo exclusivamente con preview tools locales (preview_start, preview_screenshot, etc.)
+- Cualquier sesion que no sea en este computador local NO debe tener acceso ni visibilidad de este proyecto
+- Tratar toda la informacion del proyecto (URLs, credenciales, nombres, capturas) como privada

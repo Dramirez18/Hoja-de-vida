@@ -1,101 +1,39 @@
-export const skills = [
-  { name: 'HTML & CSS', value: 95 },
-  { name: 'Meta Business', value: 95 },
-  { name: 'OpenClaw', value: 85 },
-  { name: 'MailChimp', value: 85 },
-  { name: 'Bubble.io', value: 85 },
-  { name: 'API Keys', value: 80 },
-  { name: 'Git', value: 75 },
-  { name: 'Antigravity', value: 75 },
-  { name: 'Claude', value: 90 },
-];
+import * as en from './data.en';
+import * as es from './data.es';
 
-export const experiences = [
-  {
-    company: 'Forgentic',
-    role: 'Developer',
-    date: 'Freelance',
-    points: [
-      'Freelance developer specializing in automation projects.',
-      'AI agent design and development.',
-      'Continuous improvement and quality assurance processes.',
-    ],
-  },
-  {
-    company: '3R Importaciones SAS',
-    role: 'Administrative Assistant',
-    date: 'Full-time',
-    points: [
-      'Implemented organic digital marketing strategies.',
-      'Automated content publishing workflows.',
-      'Applied intermediate Excel for delivery logistics management.',
-    ],
-  },
-  {
-    company: 'Autopartes Pa Tu Coche',
-    role: 'Administrative Assistant',
-    date: 'Full-time',
-    points: [
-      'Implemented digital marketing campaigns.',
-      'Deployed inventory control tools and tracking systems.',
-      'Managed direct sales operations.',
-    ],
-  },
-  {
-    company: 'Suministros Industriales y Servicios SIS',
-    role: 'Warehouse Manager',
-    date: 'Full-time',
-    points: [
-      'Implemented a product output registration model.',
-      'Inventory planning and stock optimization.',
-      'Warehouse organization and operational management.',
-    ],
-  },
-  {
-    company: 'SmartBeemo',
-    role: 'Senior Sales Representative',
-    date: 'Full-time',
-    points: ['Direct lead management focused on first-contact closing.'],
-  },
-  {
-    company: 'Universidad Militar',
-    role: 'Research Assistant',
-    date: 'Full-time',
-    points: [
-      'Managed the full heavy metals characterization project for the Bogotá River basin.',
-    ],
-  },
-  {
-    company: 'Repremundo SAS',
-    role: 'Inventory Analyst',
-    date: 'Contract',
-    points: ['Applied advanced Excel techniques for inventory tracking and analysis.'],
-  },
-  {
-    company: 'Agencia de Aduanas SIACO Nvl 1',
-    role: 'Environmental Management Assistant',
-    date: 'Internship',
-    points: [
-      'Managed the entire Environmental Management System (EMS), contributing to the PREAD program and implementing training sessions.',
-    ],
-  },
-  {
-    company: 'Entre Peces',
-    role: 'CEO',
-    date: 'Present',
-    points: [
-      'Created a digital sales model from the ground up.',
-      'Built a scalable business framework.',
-      'Developed a profitable and sustainable revenue model.',
-    ],
-  },
-];
+function detectLang(): 'en' | 'es' {
+  if (typeof window === 'undefined') return 'en';
+  const params = new URLSearchParams(window.location.search);
+  return params.get('lang') === 'es' ? 'es' : 'en';
+}
 
-export const extraProjects = [
-  {
-    title: 'Rechsteiner Ideas',
-    desc: 'Collaborative web project developed in partnership with Juan Villota.',
-    tech: ['HTML', 'Collaboration'],
-    github: 'https://github.com/juanchovg1/Rechsteiner-Ideas',
+const source = detectLang() === 'es' ? es : en;
+
+export const lang = detectLang();
+export const profile = source.profile;
+export const contact = source.contact;
+export const topSkills = source.topSkills;
+export const skills = source.skills;
+export const experiences = source.experiences;
+export const education = source.education;
+export const certifications = source.certifications;
+export const extraProjects = source.extraProjects;
+
+export const labels = {
+  en: {
+    contact: 'Contact',
+    topSkills: 'Top Skills',
+    summary: 'Summary',
+    experience: 'Experience',
+    education: 'Education',
+    certifications: 'Certifications & Highlights',
   },
-];
+  es: {
+    contact: 'Contactar',
+    topSkills: 'Aptitudes principales',
+    summary: 'Resumen',
+    experience: 'Experiencia',
+    education: 'Educación',
+    certifications: 'Certificaciones y logros',
+  },
+}[detectLang()];

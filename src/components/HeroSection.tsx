@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Github, Linkedin, ChevronDown } from 'lucide-react';
+import { profile, contact } from '../data';
 
 export default function HeroSection() {
   return (
@@ -12,17 +13,13 @@ export default function HeroSection() {
       >
         <p className="font-mono text-[#00E5FF] mb-4">Hi, my name is</p>
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4 text-gray-100">
-          David L. Ramírez.
+          {profile.name}.
         </h1>
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-8 text-gray-400">
-          Engineer & App Developer.
+          {profile.title}.
         </h2>
         <p className="text-lg text-gray-400 max-w-xl mb-12 leading-relaxed">
-          Engineer and application developer for entrepreneurs and businesses.
-          Design, quality, efficiency, and punctuality — these are the principles
-          that define my approach to every project. I consistently deliver my best
-          work leveraging platforms such as Bubble.io, OpenClaw, Claude, Google
-          Cloud Console, Meta, Supabase, and more.
+          {profile.summary}
         </p>
         <div className="flex gap-6 items-center">
           <a
@@ -32,10 +29,20 @@ export default function HeroSection() {
             Get In Touch
           </a>
           <div className="flex gap-4">
-            <a href="https://github.com/Dramirez18" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#00E5FF] transition-colors">
+            <a
+              href={contact.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#00E5FF] transition-colors"
+            >
               <Github size={24} />
             </a>
-            <a href="https://www.linkedin.com/in/david-ram%C3%ADrez-contreras-093bb517b/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#00E5FF] transition-colors">
+            <a
+              href={contact.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#00E5FF] transition-colors"
+            >
               <Linkedin size={24} />
             </a>
           </div>
@@ -51,8 +58,8 @@ export default function HeroSection() {
         <div className="absolute inset-0 border-2 border-[#00E5FF] rounded translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
         <div className="relative bg-[#00E5FF]/10 rounded overflow-hidden aspect-square border border-white/10 flex items-center justify-center">
           <img
-            src="https://i.postimg.cc/bNn8Mrpw/David-Ramirez-jpg.png"
-            alt="David Leonardo Ramírez Contreras"
+            src={profile.photo}
+            alt={profile.name}
             className="object-cover w-full h-full mix-blend-luminosity hover:mix-blend-normal transition-all duration-500 z-10 relative"
           />
         </div>

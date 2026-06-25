@@ -6,3 +6,9 @@ coverage/
 *.log
 .env*
 !.env.example
+
+.vercel
+
+# Local agent config & generated preview
+.claude/
+pdf-preview-fullpage.jpg

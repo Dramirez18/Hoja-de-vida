@@ -12,3 +12,6 @@ coverage/
 # Local agent config & generated preview
 .claude/
 pdf-preview-fullpage.jpg
+
+# CLAUDE.md interno — SOLO local, NO en GitHub
+CLAUDE.md
